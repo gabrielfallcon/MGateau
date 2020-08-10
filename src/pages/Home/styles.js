@@ -73,7 +73,7 @@ export const Container = styled.div`
       
       .barra {
         width: 80%;
-        border: 1px solid #272725;
+        border: 1px dashed #f9f0e1;
       }
       h1 {
         position: absolute;
@@ -118,6 +118,52 @@ export const Container = styled.div`
         }
       }
     }
+
+    #founder {
+      max-width: 100%;
+      background: #f9f0e1;
+      position: relative;
+      padding: 3.5rem 0;
+
+      .barra {
+        width: 50%;
+        border: 1px dashed #272725;
+      }
+
+      h1 {
+        color: #272725;
+        position: absolute;
+        top: -0.1rem;
+        padding: 0 2rem;
+        background: #f9f0e1;
+      }
+      h3 {
+        margin-top: 4.4rem;
+        width: 100%;
+        max-width: 650px;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+        font-weight: 400;
+        color: #b0998d;
+      }
+      img {
+        width: 100%;
+        max-width: 350px;
+        margin-top: 2.4rem;
+        border-radius: 50%;
+      }
+      h2 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        background: -webkit-linear-gradient(#b0998d, #272725);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      span {
+        font-size: 1rem;
+      }
+    }
   }
 
   @media (max-width: 768px) {
@@ -144,6 +190,14 @@ export const Container = styled.div`
           img {
             display: none;
           }
+        }
+      }
+      #founder {
+        h1 {
+          padding: 0;
+        }
+        h3 {
+          width: 90%;
         }
       }
     }

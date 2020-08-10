@@ -7,6 +7,7 @@ import { Container, Section } from './styles';
 
 import imgChef from '../../assets/Images/chef.png';
 import whatsappIcon from '../../assets/Images/whatsapp.svg';
+import imgProfile from '../../assets/Images/profile.jpeg';
 
 const Home = () => {
 
@@ -59,6 +60,19 @@ const Home = () => {
             </ul>
             <img src={imgChef} alt="Chefe de Cozinha" />
           </div>
+        </Section>
+
+        <Section id="founder">
+          <div className="barra" />
+          <h1>Empresa</h1>
+          <h3>
+            Somos uma equipe de profissionais dedicados em entregar
+            o melhor doque você pode experimentar, a sua felicidad 
+            é o que nos inspira em dar o melhor de nós!
+          </h3>
+          <img src={imgProfile} alt="Igor Galdino"/>
+          <h2>Igor Galdino</h2>
+          <span>CEO at Mgateau</span>
         </Section>
       </main>
 
