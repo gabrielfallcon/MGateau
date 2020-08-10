@@ -105,6 +105,9 @@ export const Container = styled.div`
         border-bottom-right-radius: 800%;
       }
       #cardapio {
+        h1 {
+          width: auto;
+        }
         h2 {
           margin-left: 30px;
         }
@@ -112,6 +115,10 @@ export const Container = styled.div`
           width: 100%;
         }
         .cardapio-content {
+          ul {
+            width: 100%;
+            max-width: calc(100% - 30px);
+          }
           img {
             display: none;
           }
