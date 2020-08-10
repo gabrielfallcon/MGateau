@@ -8,7 +8,7 @@ export const Container = styled.div`
   color: #272725;
   position: relative;
 
-  a {
+  .contato-whats {
     position: fixed;
     right: 2.1rem;
     bottom: 1.8rem;
@@ -203,9 +203,12 @@ export const Container = styled.div`
         h3 {
           width: 90%;
         }
+        img {
+          max-width: 300px;
+        }
       }
     }
-    a {
+    .contato-whats {
       right: 0.1rem;
       bottom: 0.8rem;
       width: 160px;
@@ -266,6 +269,97 @@ export const Section = styled.section`
   }
 `;
 
+export const Footer = styled.footer`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: -webkit-linear-gradient(#b0998d, #f9f0e1);
+  
+
+  .content {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .rede-social {
+      a {
+        color: #272725;
+        transition: color .6s;
+
+        & + a {
+          margin-left: 20px;
+        }
+        &:hover {
+          color: #f9f0e1;
+        }
+      }
+    }
+    .email-contato {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 20px;
+        color: #f9f0e1;
+      }
+      a {
+        text-decoration: none;
+        color: #f9f0e1;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .rodape {
+    width: 100%;
+    margin-top: 1.4rem;
+    padding-top: 1rem;
+    border-top: 2px solid #272725;
+
+    .content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        font-size: 1rem;
+        font-weight: 400;
+
+        a {
+          margin-left: 10px;
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: #272725;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+
+      .email-contato {
+        margin: 2.4rem 0;
+      }
+    }
+    .rodape {
+      .content {
+        margin-bottom: 80px;
+
+        h3 {
+          width: 300px;
+          font-size: 0.9rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+`;
 
 
 

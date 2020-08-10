@@ -1,9 +1,9 @@
 import React from 'react';
 import { boloDePote } from '../../Data/Cardapio';
-
+import { FiInstagram, FiMessageSquare, FiFacebook, FiLogIn } from 'react-icons/fi';
 import Nav from '../../components/Nav';
 
-import { Container, Section } from './styles';
+import { Container, Section, Footer } from './styles';
 
 import imgChef from '../../assets/Images/chef.png';
 import whatsappIcon from '../../assets/Images/whatsapp.svg';
@@ -76,10 +76,46 @@ const Home = () => {
         </Section>
       </main>
 
-      <a href={`https://wa.me/5511953377186/?text=${text}`}>
+      <a class="contato-whats" href={`https://wa.me/5511953377186/?text=${text}`}>
         <img src={whatsappIcon} alt="" />
         Fazer pedido
       </a>
+
+      <Footer>
+        <div className="content">
+          <div className="rede-social">
+            <h2>Redes Sociais</h2>
+            <a href="#">
+              <FiFacebook size={30}/>
+            </a>
+            <a href="#">
+              <FiInstagram size={30}/>
+            </a>
+            <a href="#">
+              <FiMessageSquare size={30}/>
+            </a>
+          </div>
+          <div className="email-contato">
+            <FiLogIn size={30}/> 
+            <a href="mailto:contato@mgateau.com.br">
+              contato@mgateau.com.br
+            </a>
+          </div>
+        </div>
+        <div className="rodape">
+          <div className="content">
+            <h3>
+              Rua Maria Maluf, 1370 - CEP 08382-680  - Zona Leste - São Paulo/SP.
+            </h3>
+            <h3>
+              Desenvolvido por: 
+              <a target="_blank"href="https://www.linkedin.com/in/frontgabriel/">
+                Gabbriel.js
+              </a>
+            </h3>
+          </div>
+        </div>
+      </Footer>
     </Container>
   );
 }

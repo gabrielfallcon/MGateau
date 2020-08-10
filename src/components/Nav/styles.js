@@ -5,7 +5,7 @@ export const NavBar = styled.div`
   height: 5rem;
   position: absolute;
   top: 3.4rem;
-  background: #b0998d;
+  background: #f9f0e1;
 
   & > div {
     width: 100%;
