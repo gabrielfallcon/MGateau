@@ -334,6 +334,7 @@ export const Footer = styled.footer`
           font-weight: 600;
           color: #272725;
           text-decoration: none;
+          font-family: 'Comfortaa', cursive;
         }
       }
     }
