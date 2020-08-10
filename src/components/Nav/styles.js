@@ -37,4 +37,18 @@ export const NavBar = styled.div`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    & > div {
+      img {
+        max-width: 10.4rem;
+      }
+
+      ul {
+        li {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
 `;

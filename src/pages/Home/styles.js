@@ -51,6 +51,21 @@ export const Section = styled.section`
     border-radius: 2.8rem;
     color: #b0998d;
   }
+
+  @media (max-width: 768px) {
+    h1 {
+      width: 90%;
+      max-width: 450px;
+      text-align: center;
+    }
+    span {
+      width: 90%;
+      max-width: 420px;
+    }
+    button {
+      max-width: 90%;
+    }
+  }
 `;
 
 
