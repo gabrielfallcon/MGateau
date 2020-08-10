@@ -9,4 +9,5 @@ body {
 button {
   border: 0;
   cursor: pointer;
+  outline: 0;
 }

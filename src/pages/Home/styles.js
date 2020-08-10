@@ -5,6 +5,7 @@ import imgBanner from '../../assets/Images/banner.jpg';
 
 export const Container = styled.div`
   width: 100%;
+  color: #272725;
 
   header {
     width: 100%;
@@ -17,6 +18,106 @@ export const Container = styled.div`
   }
   main {
     width: 100%;
+    
+    #clear {
+      max-width: 100%;
+      background: #f9f0e1;
+      
+
+      .content {
+        max-width: 1120px;
+        height: 450px;
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+          margin-top: 4.4rem;
+        }
+        span {
+          font-size: 1.2rem;
+          line-height: 2.2rem;
+        }
+      }
+    }
+
+    #cardapio {
+      position: relative;
+   
+      
+      .barra {
+        width: 80%;
+        border: 1px solid #272725;
+      }
+      h1 {
+        position: absolute;
+        top: -3.3rem;
+        padding: 0 2rem;
+        background: #b0998d;
+      }
+      h2 {
+        margin-top: 6.4rem;
+        text-align: flex-start;
+        align-self: flex-start;
+      }
+      .cardapio-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+          list-style: none;
+          align-self: flex-start;
+
+          li {
+            & + li {
+              margin-top: 1.4rem;
+              padding-top: 1.4rem;
+              border-top: 1px dashed #f9f0e1;
+            }
+
+            h3 {
+              color: #f9f0e1;
+              span {
+                margin-left: 2.4rem;
+              }
+            }
+          }
+        }
+
+        img {
+          width: 100%;
+          max-width: 350px;
+          margin-right: 80px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    main {
+      #clear {
+        border-top-right-radius: 80%;
+        border-bottom-right-radius: 800%;
+      }
+      #cardapio {
+        h2 {
+          margin-left: 30px;
+        }
+        .barra {
+          width: 100%;
+        }
+        .cardapio-content {
+          img {
+            display: none;
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -24,6 +125,7 @@ export const Section = styled.section`
   width: 100%;
   max-width: 1120px;
   margin: 3.4rem auto;
+  background: #b0998d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,8 +152,9 @@ export const Section = styled.section`
     font-weight: 600;
     border-radius: 2.8rem;
     color: #b0998d;
+    background: #fff;
   }
-
+  
   @media (max-width: 768px) {
     h1 {
       width: 90%;
