@@ -193,8 +193,12 @@ export const Container = styled.div`
         }
       }
       #founder {
+        .barra {
+          width: 100%;
+        }
         h1 {
           padding: 0;
+          width: 15rem;
         }
         h3 {
           width: 90%;
