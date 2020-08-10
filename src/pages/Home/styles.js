@@ -6,6 +6,28 @@ import imgBanner from '../../assets/Images/banner.jpg';
 export const Container = styled.div`
   width: 100%;
   color: #272725;
+  position: relative;
+
+  a {
+    position: fixed;
+    right: 2.1rem;
+    bottom: 1.8rem;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4rem;
+    background: #04d361;
+    padding: 0 20px;
+    border-radius: 40px;
+    color: #FFF;
+    text-decoration: none;
+
+    img {
+      width: 30px;
+    }
+  }
 
   header {
     width: 100%;
@@ -124,6 +146,14 @@ export const Container = styled.div`
           }
         }
       }
+    }
+    a {
+      right: 0.1rem;
+      bottom: 0.8rem;
+      width: 160px;
+      font-size: 1rem;
+      padding: 0 16px;
+      
     }
   }
 `;

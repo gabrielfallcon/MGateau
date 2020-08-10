@@ -6,8 +6,11 @@ import Nav from '../../components/Nav';
 import { Container, Section } from './styles';
 
 import imgChef from '../../assets/Images/chef.png';
+import whatsappIcon from '../../assets/Images/whatsapp.svg';
 
 const Home = () => {
+
+  const text = 'Olá dei uma olhada aqui no site e estou interessado em um bolo de pode 😋😀';
   return (
     <Container>
       <header>
@@ -20,11 +23,11 @@ const Home = () => {
             Venha provar do melhor bolo de pote da região!
           </h1>
           <span>
-            São mais de 10 sabores com receitas secretas 
+            São mais de 10 sabores com receitas secretas
             que são de dar agua na boca!
-            São mais de 10 sabores com receitas secretas 
+            São mais de 10 sabores com receitas secretas
             que são de dar agua na boca!
-            São mais de 10 sabores com receitas secretas 
+            São mais de 10 sabores com receitas secretas
             que são de dar agua na boca!
           </span>
           <button>Ver Cardápio</button>
@@ -38,26 +41,31 @@ const Home = () => {
             </span>
           </div>
         </Section>
-        
+
         <Section id="cardapio">
-            <div className="barra" />
-            <h1>Cardápio</h1>
-            <h2>Bolo de pote</h2>
-            <div className="cardapio-content">
-              <ul>
-                {boloDePote.map(bolo => {
-                  return (
-                    <li key={bolo.title}>
-                      <h3> {bolo.title} <span> R$ { bolo.price} </span></h3>
-                      <p> {bolo.description} </p>
-                    </li>
-                  )
-                })}
-              </ul>
-              <img src={imgChef} alt="Chefe de Cozinha"/>
-            </div>
+          <div className="barra" />
+          <h1>Cardápio</h1>
+          <h2>Bolo de pote</h2>
+          <div className="cardapio-content">
+            <ul>
+              {boloDePote.map(bolo => {
+                return (
+                  <li key={bolo.title}>
+                    <h3> {bolo.title} <span> R$ {bolo.price} </span></h3>
+                    <p> {bolo.description} </p>
+                  </li>
+                )
+              })}
+            </ul>
+            <img src={imgChef} alt="Chefe de Cozinha" />
+          </div>
         </Section>
       </main>
+
+      <a href={`https://wa.me/11953377186/?text=${text}`}>
+        <img src={whatsappIcon} alt="" />
+        Fazer pedido
+      </a>
     </Container>
   );
 }

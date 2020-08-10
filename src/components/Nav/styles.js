@@ -25,16 +25,12 @@ export const NavBar = styled.div`
 
     ul {
       width: 20.4rem;
+      height: 100%;
       display: flex;
       justify-content: space-around;
       align-items: center;
       list-style: none;
 
-      li{
-        font-size: 1.6rem;
-        color: #272725;
-        cursor: pointer;
-      }
     }
   }
 
@@ -42,12 +38,6 @@ export const NavBar = styled.div`
     & > div {
       img {
         max-width: 10.4rem;
-      }
-
-      ul {
-        li {
-          font-size: 1.2rem;
-        }
       }
     }
   }

@@ -11,8 +11,9 @@ const Nav = () => {
       <div>
         <img src={logo} alt="Mgateau" />
         <ul>
-          <li>Quem Somos</li>
-          <li>Cardápio</li>
+          <li>
+            
+          </li>
         </ul>
       </div>
     </NavBar>
