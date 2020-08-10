@@ -76,7 +76,7 @@ const Home = () => {
         </Section>
       </main>
 
-      <a href={`https://wa.me/11953377186/?text=${text}`}>
+      <a href={`https://wa.me/5511953377186/?text=${text}`}>
         <img src={whatsappIcon} alt="" />
         Fazer pedido
       </a>
