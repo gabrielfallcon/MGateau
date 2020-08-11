@@ -78,7 +78,6 @@ const Home = () => {
 
       <a class="contato-whats" href={`https://wa.me/5511953377186/?text=${text}`}>
         <img src={whatsappIcon} alt="" />
-        Fazer pedido
       </a>
 
       <Footer>
