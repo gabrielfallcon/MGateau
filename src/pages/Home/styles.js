@@ -51,9 +51,24 @@ export const Container = styled.div`
         h1 {
           margin-top: 4.4rem;
         }
-        span {
-          font-size: 1.2rem;
-          line-height: 2.2rem;
+        .bairros {
+          width: 100%;
+          max-width: 400px;
+          list-style: none;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          position: relative;
+
+          .barra {
+            width: 100%;
+            border: 1px dashed #b0998d;
+          }
+
+          li {
+            margin: 15px 0;
+
+          }
         }
       }
     }
@@ -222,6 +237,7 @@ export const Section = styled.section`
   h1 {
     font-size: 2.1rem;
     color: #272725;
+    text-align: center;
   }
   span {
     font-size: 1.0rem;

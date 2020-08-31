@@ -1,6 +1,13 @@
 import React from 'react';
 import { boloDePote } from '../../Data/Cardapio';
-import { FiInstagram, FiMessageSquare, FiFacebook, FiLogIn } from 'react-icons/fi';
+import { bairroDeEntrega } from '../../Data/BairrosDeEntrega';
+
+import { 
+  FiInstagram, 
+  FiMessageSquare, 
+  FiFacebook, 
+  FiLogIn 
+} from 'react-icons/fi';
 import Nav from '../../components/Nav';
 
 import { Container, Section, Footer } from './styles';
@@ -10,8 +17,6 @@ import whatsappIcon from '../../assets/Images/whatsapp.svg';
 import imgProfile from '../../assets/Images/profile.jpeg';
 
 const Home = () => {
-
-  const text = 'Olá dei uma olhada aqui no site e estou interessado em um bolo de pode 😋😀';
   return (
     <Container>
       <header>
@@ -21,25 +26,26 @@ const Home = () => {
       <main>
         <Section>
           <h1>
-            Venha provar do melhor bolo de pote da região!
+            Venha se deliciar com as nossas receitas deliciosas e originais de bolo no pote.
           </h1>
           <span>
-            São mais de 10 sabores com receitas secretas
-            que são de dar agua na boca!
-            São mais de 10 sabores com receitas secretas
-            que são de dar agua na boca!
-            São mais de 10 sabores com receitas secretas
-            que são de dar agua na boca!
+            Temos disponíveis 4 sabores, em breve haverão muito mais!
           </span>
           <button>Ver Cardápio</button>
         </Section>
 
         <Section id="clear">
           <div className="content">
-            <h1>Quem Somos</h1>
-            <span>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis magnam enim eius tempora dolor quod. Repellat iusto magnam nihil, aliquam aut dolore repellendus cum molestiae autem porro, error, similique beatae.
-            </span>
+            <h1>Bairros de entrega</h1>
+
+            <ul className="bairros">
+              {bairroDeEntrega.map(bairro => (
+                <>
+                  <div className="barra" />
+                  <li>{bairro.name}</li>
+                </>
+              ))}
+            </ul>
           </div>
         </Section>
 
@@ -64,11 +70,11 @@ const Home = () => {
 
         <Section id="founder">
           <div className="barra" />
-          <h1>Empresa</h1>
+          <h1>Quem Somos</h1>
           <h3>
-            Somos uma equipe de profissionais dedicados em entregar
-            o melhor doque você pode experimentar, a sua felicidad 
-            é o que nos inspira em dar o melhor de nós!
+              Somos uma Ghost Kitchen originária do bairro Recanto Verde do Sol.
+            Iniciamos no ramo da alimentação a exatos 18 anos. Um empreendimento pouco acreditado, repleto de adversidades. Porém, crescemos! <br />
+            Hoje atendemos no centro de São Paulo e ampliamos nossa área de alcance. Fato este dado por meio do lançamento de uma nova linha de bolos no pote gourmetizados, deliciosos e originais!
           </h3>
           <img src={imgProfile} alt="Igor Galdino"/>
           <h2>Igor Galdino</h2>
@@ -76,7 +82,7 @@ const Home = () => {
         </Section>
       </main>
 
-      <a class="contato-whats" href={`https://wa.me/5511953377186/?text=${text}`}>
+      <a class="contato-whats" href="https://wa.me/message/MSYV2JMNBOQPF1">
         <img src={whatsappIcon} alt="" />
       </a>
 
@@ -104,11 +110,11 @@ const Home = () => {
         <div className="rodape">
           <div className="content">
             <h3>
-              Rua Maria Maluf, 1370 - CEP 08382-680  - Zona Leste - São Paulo/SP.
+              Rua Dona Maria Maluf, n° 12. 08382680 - Recanto Verde do Sol - SP.
             </h3>
             <h3>
               Desenvolvido por: 
-              <a target="_blank"href="https://www.linkedin.com/in/frontgabriel/">
+              <a target="_blank"href="https://www.instagram.com/gabbriel.js/">
                 Gabbriel.js
               </a>
             </h3>
